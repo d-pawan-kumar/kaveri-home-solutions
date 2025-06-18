@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaveri Home Solutions</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { line-height: 1.6; color: #333; }
+        header { background: #1a2a44; color: #fff; padding: 1rem; text-align: center; }
+        .logo { font-size: 1.8rem; font-weight: bold; }
+        .lang-switcher { margin-top: 0.5rem; }
+        .lang-switcher select { padding: 0.3rem; font-size: 1rem; }
+        .hero { position: relative; text-align: center; }
+        .hero img { width: 100%; height: 300px; object-fit: cover; }
+        .hero-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; background: rgba(0, 0, 0, 0.5); padding: 1rem; border-radius: 5px; }
+        .hero-text h1 { font-size: 2rem; }
+        .services, .contact { padding: 2rem; max-width: 800px; margin: auto; text-align: center; }
+        .services h2, .contact h2 { font-size: 2rem; margin-bottom: 1rem; color: #1a2a44; }
+        .service-grid { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+        .service { background: #f9f9f9; padding: 1rem; border-radius: 8px; width: 300px; }
+        .service img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; }
+        footer { background: #1a2a44; color: #fff; text-align: center; padding: 1rem; }
+        @media (max-width: 768px) { .hero-text h1 { font-size: 1.5rem; } .hero img { height: 200px; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Kaveri Home Solutions</div>
+        <div class="lang-switcher">
+            <select id="language">
+                <option value="en">English</option>
+                <option value="ta">தமிழ்</option>
+                <option value="kn">ಕನ್ನಡ</option>
+            </select>
+        </div>
+    </header>
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680d35e223" alt="Construction Hero">
+        <div class="hero-text">
+            <h1 data-en="Welcome to Kaveri Home Solutions" data-ta="காவேரி ஹோம் சொல்யூஷன்ஸ் வரவேற்கிறது" data-kn="ಕಾವೇರಿ ಹೋಮ್ ಸೊಲ್ಯೂಷನ್ಸ್‌ಗೆ ಸ್ವಾಗತ">Welcome to Kaveri Home Solutions</h1>
+            <p data-en="Building Your Dreams with Sri Om Shakthi Constructions" data-ta="ஸ்ரீ ஓம் சக்தி கன்ஸ்ட்ரக்ஷன்ஸுடன் உங்கள் கனவுகளை கட்டுவோம்" data-kn="ಶ್ರೀ ಓಂ ಶಕ್ತಿ ಕನ್ಸ್ಟ್ರಕ್ಷನ್ಸ್ ಜೊತೆಗೆ ನಿಮ್ಮ ಕನಸುಗಳನ್ನು ಕಟ್ಟಿರಿ">Building Your Dreams with Sri Om Shakthi Constructions</p>
+        </div>
+    </section>
+    <section class="services">
+        <h2 data-en="Our Services" data-ta="எங்கள் சேவைகள்" data-kn="ನಮ್ಮ ಸೇವೆಗಳು">Our Services</h2>
+        <div class="service-grid">
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1517167685288-0f6f3b727b36" alt="Residential">
+                <h3 data-en="Residential Construction" data-ta="குடியிருப்பு கட்டுமானம்" data-kn="ವಸತಿ ನಿರ್ಮಾಣ">Residential Construction</h3>
+                <p data-en="High-quality homes built with care." data-ta="உயர்தர வீடுகள் கவனமாக கட்டப்பட்டவை." data-kn="ಉತ್ತಮ ಗುಣಮಟ್ಟದ ಮನೆಗಳನ್ನು ಕಾಳಜಿಯಿಂದ ಕಟ್ಟಲಾಗಿದೆ.">High-quality homes built with care.</p>
+            </div>
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c8d6" alt="Commercial">
+                <h3 data-en="Commercial Construction" data-ta="வணிக கட்டுமானம்" data-kn="ವಾಣಿಜ್ಯ ನಿರ್ಮಾಣ">Commercial Construction</h3>
+                <p data-en="Robust spaces for businesses." data-ta="வணிகங்களுக்கான வலுவான இடங்கள்." data-kn="ವ್ಯವಹಾರಗಳಿಗೆ ದೃಢವಾದ ಸ್ಥಳಗಳು.">Robust spaces for businesses.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h2 data-en="Contact Us" data-ta="எங்களை தொடர்பு கொள்ளுங்கள்" data-kn="ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ">Contact Us</h2>
+        <p data-en="Phone: +91 98804 79574" data-ta="தொலைபேசி: +91 98804 79574" data-kn="ದೂರವಾಣಿ: +91 98804 79574">Phone: <a href="tel:+919880479574">+91 98804 79574</a></p>
+        <p data-en="Email: kumar98804abitha@gmail.com" data-ta="மின்னஞ்சல்: kumar98804abitha@gmail.com" data-kn="ಇಮೇಲ್: kumar98804abitha@gmail.com">Email: <a href="mailto:kumar98804abitha@gmail.com">kumar98804abitha@gmail.com</a></p>
+        <p data-en="WhatsApp: +91 98804 79574" data-ta="வாட்ஸ்அப்: +91 98804 79574" data-kn="ವಾಟ್ಸಾಪ್: +91 98804 79574">WhatsApp: <a href="https://wa.me/919880479574">+91 98804 79574</a></p>
+        <p data-en="Location: Bangalore, Karnataka" data-ta="இடம்: பெங்களூர், கர்நாடகா" data-kn="ಸ್ಥಳ: ಬೆಂಗಳೂರು, ಕರ್ನಾಟಕ">Location: Bangalore, Karnataka</p>
+    </section>
+    <footer>
+        <p data-en="© 2025 Kaveri Home Solutions" data-ta="© 2025 காவேரி ஹோம் சொல்யூஷன்ஸ்" data-kn="© 2025 ಕಾವೇರಿ ಹೋಮ್ ಸೊಲ್ಯೂಷನ್ಸ್">© 2025 Kaveri Home Solutions</p>
+    </footer>
+    <script>
+        document.getElementById('language').addEventListener('change', function() {
+            const lang = this.value;
+            const elements = document.querySelectorAll('[data-en]');
+            elements.forEach(el => {
+                el.textContent = el.getAttribute(data-${lang});
+            });
+        });
+    </script>
+</body>
+</html>
